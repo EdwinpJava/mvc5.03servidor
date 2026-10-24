@@ -1,0 +1,13 @@
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+server/instance/*.db
+server/static/uploads/postulaciones/*
+server/__pyload__/*.zip

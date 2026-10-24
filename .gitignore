@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+.venv/
+
+server/instance/*.db
+instance/*.db
+
+server/static/uploads/postulaciones/*
+/postulaciones/
+/backup_*.json
+/Guía para desplegar en Dokploy.html
+/Guía para desplegar en Dokploy_files/

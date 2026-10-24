@@ -18,4 +18,4 @@ EXPOSE 3000
 
 # 1 worker: el hilo de recordatorios diarios corre por proceso (evita correos duplicados)
 # y SQLite no tolera bien escrituras desde varios procesos. Los threads dan la concurrencia.
-CMD gunicorn app:app --bind 0.0.0.0:${PORT} --workers 1 --threads 8 --timeout 120
+CMD ["sh", "-c", "exec gunicorn app:app --bind 0.0.0.0:${PORT} --workers 1 --threads 8 --timeout 120"]
